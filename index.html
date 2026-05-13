@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XinShenLan ZhongHe | Global SSD & NAND Flash Recycling Partner</title>
+<meta name="description" content="XinShenLan ZhongHe - Global buyer of used SSDs, enterprise SSDs, NAND flash chips, defective drives, and surplus inventory. Hong Kong & Shenzhen delivery available.">
+<meta name="keywords" content="SSD回收,NAND Flash回收,固态硬盘回收,企业级SSD,闪存芯片回收,HK delivery,Shenzhen delivery,Global SSD buyer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --bg: #060b14;
+    --bg-alt: #0c1322;
+    --surface: #131c2e;
+    --surface-light: #1a2740;
+    --border: #1e3050;
+    --border-light: #2a4060;
+    --text: #e8edf5;
+    --text-dim: #7a8da6;
+    --text-dimmer: #4a5f7a;
+    --blue: #2563eb;
+    --blue-bright: #4a90f7;
+    --blue-glow: rgba(37, 99, 235, 0.12);
+    --green: #10b981;
+    --green-dim: rgba(16, 185, 129, 0.1);
+    --green-border: rgba(16, 185, 129, 0.25);
+    --green-bright: #34d399;
+    --cyan: #06b6d4;
+    --silver: #94a3b8;
+    --radius: 8px;
+    --radius-lg: 12px;
+}
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Inter', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+a { color: var(--blue-bright); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--green-bright); }
+
+/* ===== NAV ===== */
+nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    background: rgba(6, 11, 20, 0.88);
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    height: 64px; padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 4px 30px rgba(0,0,0,0.4); }
+.nav-brand {
+    display: flex; align-items: center; gap: 0.6rem;
+    font-weight: 700; font-size: 1rem; color: var(--text);
+    letter-spacing: 0.5px; flex-shrink: 0;
+}
+.nav-brand-icon {
+    width: 32px; height: 32px; border-radius: 6px;
+    background: linear-gradient(135deg, var(--blue), var(--green));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 900; color: #fff;
+}
+.nav-links { display: flex; gap: 0.1rem; align-items: center; }
+.nav-links a {
+    padding: 0.45rem 0.7rem; border-radius: 6px;
+    font-size: 0.78rem; font-weight: 500; color: var(--text-dim);
+    transition: all 0.2s; white-space: nowrap;
+}
+.nav-links a:hover { color: var(--text); background: var(--surface); text-decoration: none; }
+.nav-quote {
+    margin-left: 0.5rem; padding: 0.5rem 1.2rem !important;
+    background: var(--green) !important; color: #fff !important;
+    font-weight: 600 !important; border-radius: 6px !important;
+    font-size: 0.8rem !important;
+}
+.nav-quote:hover { background: #059669 !important; color: #fff !important; transform: translateY(-1px); }
+/* Lang Toggle */
+.lang-toggle {
+    margin-left: 0.5rem; padding: 0.4rem 0.9rem;
+    background: var(--surface); border: 1px solid var(--border-light);
+    color: var(--text-dim); font-size: 0.78rem; font-weight: 600;
+    border-radius: 6px; cursor: pointer; transition: all 0.2s;
+    font-family: inherit;
+}
+.lang-toggle:hover { border-color: var(--blue-bright); color: var(--blue-bright); }
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 8rem 2rem 5rem;
+    position: relative; overflow: hidden;
+}
+.hero-bg {
+    position: absolute; inset: 0;
+    background:
+        radial-gradient(ellipse 60% 50% at 50% 45%, rgba(37, 99, 235, 0.08), transparent 70%),
+        radial-gradient(ellipse 40% 30% at 30% 60%, rgba(16, 185, 129, 0.05), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+}
+.hero-grid {
+    position: absolute; inset: 0; opacity: 0.03;
+    background-image:
+        linear-gradient(var(--silver) 1px, transparent 1px),
+        linear-gradient(90deg, var(--silver) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+.hero::after {
+    content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--blue), var(--green), transparent);
+}
+.hero-inner { max-width: 860px; position: relative; z-index: 1; }
+.hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--green-bright);
+    border: 1px solid var(--green-border);
+    background: var(--green-dim);
+    padding: 0.4rem 1.2rem; border-radius: 999px;
+    margin-bottom: 2rem;
+    opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+}
+.hero-badge::before { content: "◆"; font-size: 0.5rem; }
+.hero h1 {
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    font-weight: 900; line-height: 1.2; margin-bottom: 1.5rem;
+    opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+}
+.hero h1 em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--blue-bright), var(--green-bright));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.hero-sub {
+    font-size: 1.05rem; color: var(--text-dim); max-width: 680px; margin: 0 auto 1rem;
+    opacity: 0; animation: fadeUp 0.8s 0.55s forwards; line-height: 1.8;
+}
+.hero-sub-cn {
+    font-size: 0.95rem; color: var(--text-dimmer); max-width: 620px; margin: 0 auto 2.5rem;
+    opacity: 0; animation: fadeUp 0.8s 0.65s forwards;
+}
+.hero-buttons {
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+    opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+}
+.hero-tags {
+    margin-top: 3rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+    opacity: 0; animation: fadeUp 0.8s 1s forwards;
+}
+.hero-tag {
+    font-size: 0.75rem; color: var(--text-dimmer); display: flex; align-items: center; gap: 0.4rem;
+}
+.hero-tag::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--green); flex-shrink: 0;
+}
+@keyframes fadeUp {
+    from { transform: translateY(28px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 2rem; border-radius: var(--radius);
+    font-size: 0.9rem; font-weight: 600; cursor: pointer;
+    border: none; transition: all 0.25s; text-decoration: none; font-family: inherit;
+}
+.btn-green { background: var(--green); color: #fff; }
+.btn-green:hover { background: #059669; color: #fff; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(16,185,129,0.25); text-decoration: none; }
+.btn-blue { background: var(--blue); color: #fff; }
+.btn-blue:hover { background: #1d4ed8; color: #fff; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(37,99,235,0.25); text-decoration: none; }
+.btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border-light); }
+.btn-outline:hover { border-color: var(--blue-bright); color: var(--blue-bright); text-decoration: none; }
+.btn-sm { padding: 0.6rem 1.4rem; font-size: 0.82rem; }
+
+/* ===== SECTION ===== */
+section { padding: 6rem 2rem; }
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-header .label {
+    display: inline-block; font-size: 0.68rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--green-bright); margin-bottom: 0.8rem;
+}
+.section-header h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.8rem; }
+.section-header p { color: var(--text-dim); max-width: 600px; margin: 0 auto; font-size: 0.95rem; }
+.divider { width: 40px; height: 3px; background: linear-gradient(90deg, var(--blue), var(--green)); margin: 1rem auto 0; border-radius: 2px; }
+
+/* ===== WHAT WE BUY ===== */
+.buy-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+}
+.buy-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 2rem; transition: all 0.3s; position: relative;
+}
+.buy-card:hover { border-color: var(--blue); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(37,99,235,0.08); }
+.buy-card-icon {
+    width: 48px; height: 48px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; margin-bottom: 1.2rem;
+}
+.buy-card-icon.blue { background: var(--blue-glow); border: 1px solid rgba(37,99,235,0.2); color: var(--blue-bright); }
+.buy-card-icon.green { background: var(--green-dim); border: 1px solid var(--green-border); color: var(--green-bright); }
+.buy-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.buy-card h3 small { font-size: 0.75rem; font-weight: 400; color: var(--text-dim); display: block; margin-top: 0.15rem; }
+.buy-card > p { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1.2rem; line-height: 1.6; }
+.buy-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.buy-list li {
+    font-size: 0.82rem; color: var(--text-dim);
+    padding: 0.3rem 0; padding-left: 1rem;
+    position: relative;
+}
+.buy-list li::before {
+    content: ""; position: absolute; left: 0; top: 50%;
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--blue-bright); transform: translateY(-50%);
+}
+.brand-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.brand-tag {
+    font-size: 0.7rem; color: var(--silver); background: var(--surface-light);
+    padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border);
+    font-weight: 500;
+}
+
+/* ===== WHY US ===== */
+.why-section { background: var(--bg-alt); }
+.why-grid {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.why-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 2rem; text-align: center; transition: all 0.3s;
+}
+.why-card:hover { border-color: var(--green-border); transform: translateY(-3px); }
+.why-num {
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 2px; color: var(--green);
+    margin-bottom: 1rem;
+}
+.why-icon {
+    width: 52px; height: 52px; border-radius: 12px; margin: 0 auto 1rem;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--green-dim); border: 1px solid var(--green-border);
+    font-size: 1.3rem; color: var(--green-bright);
+}
+.why-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+.why-card h4 small { font-size: 0.75rem; font-weight: 400; color: var(--text-dim); display: block; margin-top: 0.15rem; }
+.why-card p { font-size: 0.82rem; color: var(--text-dim); line-height: 1.6; }
+
+/* ===== PROCESS ===== */
+.process-grid {
+    max-width: 1000px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 0;
+    position: relative;
+}
+.process-grid::before {
+    content: ""; position: absolute; left: 28px; top: 40px; bottom: 40px;
+    width: 2px; background: linear-gradient(180deg, var(--blue), var(--green));
+    opacity: 0.3;
+}
+.process-step {
+    display: flex; gap: 2rem; align-items: flex-start;
+    padding: 1.5rem 0; position: relative;
+}
+.process-num {
+    width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 800; letter-spacing: 1px;
+    background: var(--surface); border: 2px solid var(--blue);
+    color: var(--blue-bright); position: relative; z-index: 1;
+}
+.process-content { flex: 1; padding-top: 0.5rem; }
+.process-content h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
+.process-content h4 small { font-size: 0.78rem; font-weight: 400; color: var(--text-dim); display: block; margin-top: 0.1rem; }
+.process-content p { font-size: 0.85rem; color: var(--text-dim); line-height: 1.7; margin-top: 0.5rem; }
+
+/* ===== DELIVERY ===== */
+.delivery-section { background: var(--bg-alt); }
+.delivery-grid {
+    max-width: 1000px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+}
+.delivery-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    padding: 2.5rem; position: relative; overflow: hidden;
+}
+.delivery-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.delivery-card.hk::before { background: linear-gradient(90deg, var(--blue-bright), var(--cyan)); }
+.delivery-card.sz::before { background: linear-gradient(90deg, var(--green), var(--green-bright)); }
+.delivery-flag { font-size: 2rem; margin-bottom: 0.75rem; }
+.delivery-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem; }
+.delivery-card h3 small { font-size: 0.85rem; font-weight: 400; color: var(--text-dim); display: block; margin-top: 0.1rem; }
+.delivery-card > p { font-size: 0.88rem; color: var(--text-dim); margin-top: 1rem; line-height: 1.7; }
+.delivery-features { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.delivery-features li {
+    font-size: 0.82rem; color: var(--text-dim); display: flex; align-items: flex-start; gap: 0.5rem;
+}
+.delivery-features li::before {
+    content: "✓"; color: var(--green-bright); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem;
+}
+
+/* ===== TESTING ===== */
+.testing-content {
+    max-width: 1000px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;
+}
+.testing-text h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+.testing-text > p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.7; }
+.testing-list {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; list-style: none;
+}
+.testing-list li {
+    font-size: 0.8rem; color: var(--text-dim);
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 0.5rem 0.8rem; border-radius: 6px;
+    display: flex; align-items: center; gap: 0.5rem;
+}
+.testing-list li::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--blue-bright); flex-shrink: 0;
+}
+.testing-note {
+    margin-top: 1.5rem; padding: 1.2rem;
+    background: var(--green-dim); border: 1px solid var(--green-border);
+    border-radius: var(--radius); font-size: 0.85rem; color: var(--green-bright);
+    line-height: 1.7;
+}
+
+/* ===== PARTNERS ===== */
+.partners-section { background: var(--bg-alt); }
+.partners-grid {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;
+}
+.partner-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.2rem;
+    text-align: center; transition: all 0.3s;
+}
+.partner-item:hover { border-color: var(--blue); transform: translateY(-2px); }
+.partner-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.partner-item h5 { font-size: 0.82rem; font-weight: 600; margin-bottom: 0.15rem; }
+.partner-item p { font-size: 0.72rem; color: var(--text-dim); }
+
+/* ===== GLOBAL ===== */
+.global-content {
+    max-width: 900px; margin: 0 auto; text-align: center;
+}
+.global-content > p {
+    font-size: 1rem; color: var(--text-dim); max-width: 700px; margin: 0 auto 1rem;
+    line-height: 1.8;
+}
+.global-content > p.cn { font-size: 0.9rem; color: var(--text-dimmer); margin-bottom: 2rem; }
+.global-cta {
+    margin-top: 2rem; padding: 2rem;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+.global-cta p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.7; }
+
+/* ===== CONTACT ===== */
+.contact-section { background: var(--bg-alt); }
+.contact-grid {
+    max-width: 1000px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem;
+}
+.contact-info-block h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+.contact-info-block > p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; line-height: 1.7; }
+.contact-item { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.3rem; }
+.contact-icon {
+    width: 42px; height: 42px; border-radius: var(--radius); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.contact-icon.blue { background: var(--blue-glow); border: 1px solid rgba(37,99,235,0.2); color: var(--blue-bright); }
+.contact-icon.green { background: var(--green-dim); border: 1px solid var(--green-border); color: var(--green-bright); }
+.contact-item-text span { display: block; font-size: 0.72rem; color: var(--text-dimmer); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+.contact-item-text p { font-size: 0.9rem; color: var(--text-dim); }
+.contact-form { display: flex; flex-direction: column; gap: 0.8rem; }
+.contact-form input, .contact-form textarea, .contact-form select {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 0.8rem 1rem; color: var(--text); font-size: 0.88rem; font-family: inherit;
+    outline: none; transition: border-color 0.2s; width: 100%;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #3a4f6a; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--blue); }
+.contact-form select option { background: var(--surface); color: var(--text); }
+.contact-form textarea { resize: vertical; min-height: 100px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--bg); border-top: 1px solid var(--border);
+    padding: 3rem 2rem 2rem;
+}
+.footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
+    margin-bottom: 2rem;
+}
+.footer-brand p { font-size: 0.85rem; color: var(--text-dim); margin-top: 0.75rem; line-height: 1.6; }
+.footer-col h5 { font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dimmer); margin-bottom: 1rem; }
+.footer-col a { display: block; font-size: 0.85rem; color: var(--text-dim); padding: 0.25rem 0; }
+.footer-col a:hover { color: var(--blue-bright); text-decoration: none; }
+.footer-bottom {
+    border-top: 1px solid var(--border); padding-top: 1.5rem;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.footer-bottom p { font-size: 0.75rem; color: var(--text-dimmer); }
+.footer-bottom-links { display: flex; gap: 1.5rem; }
+.footer-bottom-links a { font-size: 0.75rem; color: var(--text-dimmer); }
+.footer-bottom-links a:hover { color: var(--blue-bright); }
+
+/* ===== GALLERY ===== */
+.gallery-strip {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.5rem; max-width: 1200px; margin: 0 auto;
+}
+.gallery-strip img {
+    width: 100%; height: 180px; object-fit: cover;
+    border-radius: var(--radius); border: 1px solid var(--border);
+    transition: all 0.3s; cursor: pointer;
+}
+.gallery-strip img:hover { transform: scale(1.03); border-color: var(--blue-bright); box-shadow: 0 8px 30px rgba(37,99,235,0.15); }
+
+.gallery-hero {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 200px 200px; gap: 0.5rem;
+}
+.gallery-hero img {
+    width: 100%; height: 100%; object-fit: cover;
+    border-radius: var(--radius); border: 1px solid var(--border);
+}
+.gallery-hero img:first-child { grid-row: 1 / 3; }
+
+.buy-card-img {
+    width: 100%; height: 140px; object-fit: cover;
+    border-radius: var(--radius); margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+.testing-img {
+    width: 100%; height: 200px; object-fit: cover;
+    border-radius: var(--radius); border: 1px solid var(--border);
+}
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed; inset: 0; z-index: 500;
+    background: rgba(0,0,0,0.92); display: none;
+    align-items: center; justify-content: center; cursor: pointer;
+}
+.lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; }
+
+@media (max-width: 768px) {
+    .gallery-hero { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .gallery-hero img:first-child { grid-row: auto; }
+    .gallery-strip img { height: 140px; }
+    .gallery-strip { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
+
+/* ===== TOAST ===== */
+.toast {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+    background: var(--surface); border: 1px solid var(--green);
+    color: var(--green-bright); padding: 1rem 1.5rem; border-radius: var(--radius);
+    font-size: 0.9rem; display: none; animation: slideIn 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+@keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* ===== SCROLL REVEAL ===== */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .nav-links {
+        flex-wrap: wrap; gap: 0.15rem;
+    }
+    .nav-links a, .lang-toggle { font-size: 0.7rem; padding: 0.35rem 0.5rem; }
+    .nav-quote { padding: 0.35rem 0.8rem !important; font-size: 0.7rem !important; }
+}
+@media (max-width: 768px) {
+    section { padding: 4rem 1.5rem; }
+    .why-grid { grid-template-columns: 1fr; }
+    .delivery-grid { grid-template-columns: 1fr; }
+    .testing-content { grid-template-columns: 1fr; }
+    .testing-list { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+    .form-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+    .hero-buttons { flex-direction: column; align-items: stretch; }
+    .hero-buttons .btn { justify-content: center; }
+    .footer-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+    <div class="nav-brand">
+        <div class="nav-brand-icon">XB</div>
+        <span data-en="XinShenLan ZhongHe" data-zh="新深蓝众合">XinShenLan ZhongHe</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+        <a href="#home" data-en="Home" data-zh="首页">Home</a>
+        <a href="#about" data-en="About" data-zh="关于我们">About</a>
+        <a href="#buy" data-en="What We Buy" data-zh="回收范围">What We Buy</a>
+        <a href="#process" data-en="Process" data-zh="合作流程">Process</a>
+        <a href="#delivery" data-en="Delivery" data-zh="交货方式">Delivery</a>
+        <a href="#testing" data-en="Testing" data-zh="检测能力">Testing</a>
+        <a href="#partners" data-en="Partners" data-zh="合作对象">Partners</a>
+        <a href="#contact" class="nav-quote" data-en="Get a Quote" data-zh="立即报价">Get a Quote</a>
+        <button class="lang-toggle" id="langToggle" type="button">中文</button>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+        <div class="hero-badge" data-en="Global SSD &amp; NAND Flash Recycling" data-zh="全球 SSD 与 NAND 闪存回收">Global SSD &amp; NAND Flash Recycling</div>
+        <h1 data-en='Global Buyer of <em>SSDs, NAND Flash</em><br>Chips &amp; Storage Devices' data-zh='全球回收 <em>SSD、NAND 闪存</em><br>芯片及存储设备'>Global Buyer of <em>SSDs, NAND Flash</em><br>Chips &amp; Storage Devices</h1>
+        <p class="hero-sub" data-en="We buy used, surplus, defective, enterprise and consumer SSDs worldwide. Delivery and inspection available in Hong Kong and Shenzhen." data-zh="长期回收二手 SSD、企业级 SSD、闪存芯片、故障盘、工厂库存、服务器拆机盘及存储类电子物料。支持香港、深圳交货、验货与结算。">We buy used, surplus, defective, enterprise and consumer SSDs worldwide. Delivery and inspection available in Hong Kong and Shenzhen.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-green" data-en="Send Your Stock List" data-zh="发送您的货物清单">Send Your Stock List</a>
+            <a href="#contact" class="btn btn-blue" data-en="Contact via WhatsApp / WeChat" data-zh="WhatsApp / 微信联系">Contact via WhatsApp / WeChat</a>
+            <a href="#buy" class="btn btn-outline" data-en="What We Buy ▸" data-zh="回收范围 ▸">What We Buy ▸</a>
+        </div>
+        <div class="hero-tags">
+            <span class="hero-tag" data-en="Professional Recycling" data-zh="专业回收">Professional Recycling</span>
+            <span class="hero-tag" data-en="HK Delivery" data-zh="香港交货">HK Delivery</span>
+            <span class="hero-tag" data-en="Fast Quotation" data-zh="快速报价">Fast Quotation</span>
+            <span class="hero-tag" data-en="Long-Term Partner" data-zh="长期合作">Long-Term Partner</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALLERY HERO ===== -->
+<section style="padding:3rem 2rem 2rem;background:var(--bg);">
+    <div class="section-header reveal" style="margin-bottom:2rem;">
+        <div class="label" data-en="Our Operations" data-zh="业务实拍">Our Operations</div>
+        <h2 data-en="Real Stock. Real Business." data-zh="实拍现货，真实业务">Real Stock. Real Business.</h2>
+        <div class="divider"></div>
+    </div>
+    <div class="gallery-hero reveal">
+        <img src="images/6924f23a30d2cb036a676458971a5669.jpg" alt="Bulk SSD inventory">
+        <img src="images/c4ec7038266f75d74c6809c16d7e263e.jpg" alt="SSD warehouse stock">
+        <img src="images/422dc9791ea3025cec4c37acbd8d7afc.jpg" alt="SSD products">
+        <img src="images/76d80a691f40975b2b5b220a51854bd9.jpg" alt="SSD batch">
+        <img src="images/18d16cebb982e0ad2237ee574b6632e9.jpg" alt="SSD collection">
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <div class="section-header reveal">
+        <div class="label" data-en="About Us" data-zh="关于我们">About Us</div>
+        <h2 data-en="About XinShenLan ZhongHe" data-zh="关于新深蓝众合">About XinShenLan ZhongHe</h2>
+        <p data-en="Your trusted global partner for SSD and NAND flash recycling" data-zh="您值得信赖的全球 SSD 与 NAND 闪存回收合作伙伴">Your trusted global partner for SSD and NAND flash recycling</p>
+        <div class="divider"></div>
+    </div>
+    <div style="max-width:900px;margin:0 auto;">
+        <div class="delivery-card reveal" style="border-left:3px solid var(--green);">
+            <p data-en="&lt;strong&gt;XinShenLan ZhongHe Co., Ltd.&lt;/strong&gt; is a professional company specializing in the global recycling and reuse of SSDs and NAND flash chips. With years of deep experience in the SSD and NAND flash industry, we have established long-term and stable partnerships with SSD distributors, electronic recyclers, data center liquidators, server dismantling companies, factory surplus suppliers, trading companies, and NAND flash suppliers worldwide." data-zh="&lt;strong&gt;新深蓝众合有限公司&lt;/strong&gt;是一家专注于 SSD 与 NAND 闪存芯片全球回收与再利用的专业公司。凭借多年在 SSD 和 NAND 闪存行业的深厚经验，我们与全球范围内的 SSD 渠道商、电子回收商、数据中心拆机商、服务器拆解公司、工厂库存供应商、贸易公司及闪存芯片供应商建立了长期稳定的合作关系。" style="font-size:1rem;color:var(--text);line-height:1.9;margin-top:0;"></p>
+            <p data-en="We provide fast quotation, professional inspection, sorting and classification, and flexible delivery options in Hong Kong and Shenzhen. We are not a simple recycler — we have the technical capability to evaluate, test, sort, and determine the best path for every piece of hardware: resale, repair, secure erase, chip recovery, or material recycling." data-zh="我们提供快速报价、专业验货、检测分类以及香港和深圳的灵活交货方式。我们不只是简单回收 SSD，我们能够判断货物适合整盘销售、维修、清零、拆芯片、芯片分料或再利用。" style="font-size:0.9rem;color:var(--text-dim);line-height:1.8;margin-top:1rem;"></p>
+            <p data-en="If you have bulk SSDs, server dismantling drives, factory surplus, NAND flash chips, or storage-related materials, feel free to contact us." data-zh="如果您有批量 SSD、服务器拆机盘、工厂库存、闪存芯片或相关存储类物料，欢迎联系我们。" style="font-size:0.85rem;color:var(--text-dim);line-height:1.8;margin-top:1rem;"></p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHAT WE BUY ===== -->
+<section id="buy" style="background:var(--bg-alt);">
+    <div class="section-header reveal">
+        <div class="label" data-en="What We Buy" data-zh="回收范围">What We Buy</div>
+        <h2 data-en="What We Buy" data-zh="回收范围">What We Buy</h2>
+        <p data-en="We recycle all types of SSDs, NAND flash chips, and storage-related electronic materials" data-zh="我们长期回收以下类型的 SSD、闪存芯片及存储类电子物料">We recycle all types of SSDs, NAND flash chips, and storage-related electronic materials</p>
+        <div class="divider"></div>
+    </div>
+    <div class="buy-grid">
+        <div class="buy-card reveal">
+            <img class="buy-card-img" src="images/5a71fc83b182e902d242d887fd66c30b.jpg" alt="Used SSDs">
+            <div class="buy-card-icon blue">💾</div>
+            <h3 data-en="Used SSDs" data-zh="二手固态硬盘">Used SSDs</h3>
+            <p data-en="All form factors and interfaces — consumer and commercial SSDs" data-zh="回收各类接口与形态的消费级及商用固态硬盘">All form factors and interfaces — consumer and commercial SSDs</p>
+            <ul class="buy-list"><li>2.5-inch SATA SSD</li><li>M.2 SATA SSD</li><li>M.2 NVMe SSD</li><li>PCIe SSD (Add-in Card)</li><li>U.2 / U.3 Enterprise SSD</li><li>mSATA / Half Slim SSD</li></ul>
+        </div>
+        <div class="buy-card reveal">
+            <img class="buy-card-img" src="images/e7fe1f008bca6ebc3ccc316dc85735dc.jpg" alt="Enterprise SSDs">
+            <div class="buy-card-icon green">🖥</div>
+            <h3 data-en="Enterprise SSDs" data-zh="企业级固态硬盘">Enterprise SSDs</h3>
+            <p data-en="Server and data center pulls — all major enterprise SSD brands" data-zh="专业回收服务器、数据中心拆机企业级 SSD">Server and data center pulls — all major enterprise SSD brands</p>
+            <ul class="buy-list"><li>Intel / Solidigm D3 / D5 / P Series</li><li>Samsung PM / SM Series</li><li>Micron 5100–9300 Series</li><li>SK hynix Gold / Silver Series</li><li>Kioxia CD / CM Series</li><li>SanDisk / WD Ultrastar Series</li><li>Seagate Nytro / Exos Series</li></ul>
+            <div class="brand-tags"><span class="brand-tag">Intel</span><span class="brand-tag">Samsung</span><span class="brand-tag">Micron</span><span class="brand-tag">SK hynix</span><span class="brand-tag">Kioxia</span><span class="brand-tag">WD</span><span class="brand-tag">SanDisk</span><span class="brand-tag">Seagate</span></div>
+        </div>
+        <div class="buy-card reveal">
+            <img class="buy-card-img" src="images/2687a22fdbba01354d1d6cee2f4ba732.jpg" alt="NAND Flash Chips">
+            <div class="buy-card-icon blue">⚡</div>
+            <h3 data-en="NAND Flash Chips" data-zh="闪存芯片">NAND Flash Chips</h3>
+            <p data-en="All types of NAND flash chips, packages, and wafers" data-zh="回收各类 NAND 闪存芯片、封装及晶圆">All types of NAND flash chips, packages, and wafers</p>
+            <ul class="buy-list"><li>BGA NAND Flash (TSOP / BGA)</li><li>eMMC / eMCP</li><li>UFS / UFS MCP</li><li>Wafer / Die</li><li>Removed NAND chips from SSDs</li></ul>
+        </div>
+        <div class="buy-card reveal">
+            <img class="buy-card-img" src="images/732480d28e71e428c182b30475001879.jpg" alt="Overstock and E-waste">
+            <div class="buy-card-icon green">📦</div>
+            <h3 data-en="Overstock & E-waste" data-zh="库存与电子废料">Overstock & E-waste</h3>
+            <p data-en="Factory surplus, channel overstock, and storage-related electronic waste" data-zh="回收各类工厂库存、渠道尾货及存储类电子废料">Factory surplus, channel overstock, and storage-related electronic waste</p>
+            <ul class="buy-list"><li>Factory Surplus</li><li>Channel Overstock</li><li>Dismantled Parts</li><li>Defective Drives</li><li>Scrap Drives</li><li>Mixed Lots</li></ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why-section" id="why">
+    <div class="section-header reveal">
+        <div class="label" data-en="Why Work With Us" data-zh="核心优势">Why Work With Us</div>
+        <h2 data-en="Why Work With Us" data-zh="为什么选择我们">Why Work With Us</h2>
+        <p data-en="Professional, fast, and reliable global SSD recycling partner" data-zh="专业、快速、可靠的全球 SSD 回收合作伙伴">Professional, fast, and reliable global SSD recycling partner</p>
+        <div class="divider"></div>
+    </div>
+    <div class="why-grid">
+        <div class="why-card reveal">
+            <div class="why-num">01</div><div class="why-icon">⚙</div>
+            <h4 data-en="Professional Experience" data-zh="多年行业经验">Professional Experience</h4>
+            <p data-en="Years of SSD / NAND flash industry experience with deep market knowledge" data-zh="多年 SSD / NAND 闪存行业经验，深谙市场行情与产品价值评估">Years of SSD / NAND flash industry experience with deep market knowledge</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-num">02</div><div class="why-icon">⚡</div>
+            <h4 data-en="Fast Quotation" data-zh="快速报价">Fast Quotation</h4>
+            <p data-en="Quick quotes upon receiving stock list, photos, and test reports" data-zh="收到清单、图片、测试图后快速报价，高效沟通不拖延">Quick quotes upon receiving stock list, photos, and test reports</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-num">03</div><div class="why-icon">🌏</div>
+            <h4 data-en="HK & SZ Delivery" data-zh="香港/深圳交货">HK & SZ Delivery</h4>
+            <p data-en="Flexible delivery, inspection, and settlement in Hong Kong and Shenzhen" data-zh="支持香港、深圳交货、验货、结算，灵活适应不同客户需求">Flexible delivery, inspection, and settlement in Hong Kong and Shenzhen</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-num">04</div><div class="why-icon">📊</div>
+            <h4 data-en="Bulk Purchase" data-zh="批量收购">Bulk Purchase</h4>
+            <p data-en="Whole-lot purchases for factory inventory, trading stock, and dismantling batches" data-zh="支持整批收购，适合工厂库存、贸易商库存、拆机批量货">Whole-lot purchases for factory inventory, trading stock, and dismantling batches</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-num">05</div><div class="why-icon">🔬</div>
+            <h4 data-en="Testing & Sorting" data-zh="检测分类">Testing & Sorting</h4>
+            <p data-en="Full SSD testing, sorting, secure erase, dismantling, and chip grading capability" data-zh="具备 SSD 检测、分类、清零、拆解、芯片分料完整能力">Full SSD testing, sorting, secure erase, dismantling, and chip grading capability</p>
+        </div>
+        <div class="why-card reveal">
+            <div class="why-num">06</div><div class="why-icon">🤝</div>
+            <h4 data-en="Long-Term Partner" data-zh="长期合作">Long-Term Partner</h4>
+            <p data-en="We value reputation and stable relationships — not one-time deals" data-zh="不做一次性生意，重视信誉和稳定交易，建立长期合作关系">We value reputation and stable relationships — not one-time deals</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section id="process">
+    <div class="section-header reveal">
+        <div class="label" data-en="How It Works" data-zh="合作流程">How It Works</div>
+        <h2 data-en="How It Works" data-zh="合作流程">How It Works</h2>
+        <p data-en="5 simple steps from inquiry to long-term cooperation" data-zh="5 步完成交易，简单透明">5 simple steps from inquiry to long-term cooperation</p>
+        <div class="divider"></div>
+    </div>
+    <div class="process-grid">
+        <div class="process-step reveal">
+            <div class="process-num">STEP 1</div>
+            <div class="process-content">
+                <h4 data-en="Send Stock Information" data-zh="发送货物信息">Send Stock Information</h4>
+                <p data-en="Send us your product list, photos, quantities, capacities, brands, and health status via WhatsApp, WeChat, Email, or our online form." data-zh="发送产品清单、图片、数量、容量、品牌、健康度等信息。可通过 WhatsApp、WeChat、Email 或在线表单提交。">Send us your product list, photos, quantities, capacities, brands, and health status via WhatsApp, WeChat, Email, or our online form.</p>
+            </div>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-num">STEP 2</div>
+            <div class="process-content">
+                <h4 data-en="Preliminary Quotation" data-zh="初步报价">Preliminary Quotation</h4>
+                <p data-en="We provide a preliminary quote based on model, capacity, health condition, and current market conditions — usually within 24 hours." data-zh="我们根据型号、容量、健康状态和市场行情进行初步报价，通常 24 小时内回复。">We provide a preliminary quote based on model, capacity, health condition, and current market conditions — usually within 24 hours.</p>
+            </div>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-num">STEP 3</div>
+            <div class="process-content">
+                <h4 data-en="Delivery to HK / SZ" data-zh="香港或深圳交货">Delivery to HK / SZ</h4>
+                <p data-en="Once pricing is confirmed, arrange delivery to Hong Kong or Shenzhen. We can provide logistics recommendations." data-zh="双方确认价格后，可安排香港或深圳交货。我们可根据货物类型提供物流建议。">Once pricing is confirmed, arrange delivery to Hong Kong or Shenzhen. We can provide logistics recommendations.</p>
+            </div>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-num">STEP 4</div>
+            <div class="process-content">
+                <h4 data-en="Inspection & Testing" data-zh="验货与检测">Inspection & Testing</h4>
+                <p data-en="On-site or warehouse inspection including quantity verification, model confirmation, health check, appearance, and functional testing." data-zh="现场或仓库验货，包括数量核对、型号确认、健康度检测、外观检查、功能状态测试。">On-site or warehouse inspection including quantity verification, model confirmation, health check, appearance, and functional testing.</p>
+            </div>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-num">STEP 5</div>
+            <div class="process-content">
+                <h4 data-en="Payment & Cooperation" data-zh="结算与长期合作">Payment & Cooperation</h4>
+                <p data-en="After verification, payment is settled and a long-term purchasing partnership is established. Multiple settlement methods available." data-zh="确认无误后结算付款，并建立长期采购合作关系。支持多种结算方式。">After verification, payment is settled and a long-term purchasing partnership is established. Multiple settlement methods available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== DELIVERY ===== -->
+<section class="delivery-section" id="delivery">
+    <div class="section-header reveal">
+        <div class="label" data-en="Delivery Options" data-zh="交货方式">Delivery Options</div>
+        <h2 data-en="Hong Kong & Shenzhen Delivery" data-zh="香港与深圳交货">Hong Kong & Shenzhen Delivery</h2>
+        <p data-en="Flexible delivery options serving global suppliers" data-zh="灵活的交货方式，服务全球供应商">Flexible delivery options serving global suppliers</p>
+        <div class="divider"></div>
+    </div>
+    <div class="delivery-grid">
+        <div class="delivery-card hk reveal">
+            <div class="delivery-flag">🇭🇰</div>
+            <h3 data-en="Hong Kong Delivery" data-zh="香港交货">Hong Kong Delivery</h3>
+            <p data-en="For international suppliers, Hong Kong is a convenient trading point for SSD and NAND flash recycling. We can arrange inspection, sorting, and settlement after delivery." data-zh="香港是国际客户最便捷的交货点，适合全球供应商进行 SSD 和闪存芯片交易。我们可在交货后安排验货、分类和结算。">For international suppliers, Hong Kong is a convenient trading point for SSD and NAND flash recycling. We can arrange inspection, sorting, and settlement after delivery.</p>
+            <ul class="delivery-features">
+                <li data-en="International suppliers preferred delivery point" data-zh="国际客户首选交货点">International suppliers preferred delivery point</li>
+                <li data-en="On-site inspection and testing available" data-zh="可安排现场验货和检测">On-site inspection and testing available</li>
+                <li data-en="Flexible settlement in multiple currencies" data-zh="支持多种货币结算">Flexible settlement in multiple currencies</li>
+                <li data-en="Convenient logistics and customs handling" data-zh="便捷的物流与清关">Convenient logistics and customs handling</li>
+            </ul>
+        </div>
+        <div class="delivery-card sz reveal">
+            <div class="delivery-flag">🇨🇳</div>
+            <h3 data-en="Shenzhen Delivery" data-zh="深圳交货">Shenzhen Delivery</h3>
+            <p data-en="Shenzhen delivery is available for mainland China and nearby Asian suppliers. As a major electronics hub, Shenzhen offers efficient processing and logistics." data-zh="深圳交货适合中国大陆及周边亚洲供应商，作为电子产业中心，具备高效的仓储与物流能力。">Shenzhen delivery is available for mainland China and nearby Asian suppliers. As a major electronics hub, Shenzhen offers efficient processing and logistics.</p>
+            <ul class="delivery-features">
+                <li data-en="Mainland China and Asian suppliers" data-zh="中国大陆及亚洲供应商">Mainland China and Asian suppliers</li>
+                <li data-en="Warehouse inspection and sorting" data-zh="仓库验货与分类">Warehouse inspection and sorting</li>
+                <li data-en="RMB / USD settlement supported" data-zh="支持人民币/美元结算">RMB / USD settlement supported</li>
+                <li data-en="Fast processing and logistics" data-zh="高效处理与物流">Fast processing and logistics</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTING ===== -->
+<section id="testing">
+    <div class="section-header reveal">
+        <div class="label" data-en="Quality & Testing" data-zh="检测能力">Quality & Testing</div>
+        <h2 data-en="Testing, Sorting & Classification" data-zh="检测与分类能力">Testing, Sorting & Classification</h2>
+        <p data-en="Professional testing and precise sorting to maximize the value of every chip" data-zh="专业检测，精准分类，确保每一颗芯片的价值最大化">Professional testing and precise sorting to maximize the value of every chip</p>
+        <div class="divider"></div>
+    </div>
+    <div class="testing-content">
+        <div class="testing-text reveal">
+            <h3 data-en="Comprehensive Testing Capabilities" data-zh="全面的检测能力">Comprehensive Testing Capabilities</h3>
+            <p data-en="We are not a simple recycler — we can determine the best path for every piece of hardware: resale, repair, secure erase, chip recovery, chip sorting, or material recycling." data-zh="我们不只是简单回收 SSD，我们能够判断货物适合整盘销售、维修、清零、拆芯片、芯片分料或再利用。">We are not a simple recycler — we can determine the best path for every piece of hardware: resale, repair, secure erase, chip recovery, chip sorting, or material recycling.</p>
+            <ul class="testing-list">
+                <li data-en="Brand" data-zh="品牌">Brand</li>
+                <li data-en="Capacity" data-zh="容量">Capacity</li>
+                <li data-en="Interface" data-zh="接口">Interface</li>
+                <li data-en="Model" data-zh="型号">Model</li>
+                <li data-en="Health" data-zh="健康度">Health</li>
+                <li data-en="NAND ID" data-zh="NAND ID">NAND ID</li>
+                <li data-en="Part Number" data-zh="料号">Part Number</li>
+                <li data-en="Appearance" data-zh="外观">Appearance</li>
+                <li data-en="Secure Erase" data-zh="安全清零">Secure Erase</li>
+                <li data-en="Chip Recovery" data-zh="芯片回收">Chip Recovery</li>
+            </ul>
+            <div class="testing-note" data-en="We determine the optimal processing plan for each batch based on test results: full drive resale, repair refurbishment, secure erase, chip dismantling, die grading, or material recycling." data-zh="我们能够根据检测结果为每批货物制定最优处理方案：整盘销售、维修翻新、安全清零、芯片拆解、颗粒分类或材料回收。">We determine the optimal processing plan for each batch based on test results: full drive resale, repair refurbishment, secure erase, chip dismantling, die grading, or material recycling.</div>
+        </div>
+        <div class="reveal" style="display:flex;flex-direction:column;gap:1rem;">
+            <img class="testing-img" src="images/652730b02c3d7687daaf818d02bc1122.jpg" alt="SSD Testing">
+            <img class="testing-img" src="images/0ac4de2d0c891c8e06caa3b17259ca52.jpg" alt="SSD Inspection">
+            <img class="testing-img" src="images/8f3b9f53607a9c76eec39c97a633011d.jpg" alt="SSD Sorting">
+            <div class="delivery-card" style="padding:1.5rem;border-left:3px solid var(--blue);">
+                <h4 data-en="SSD Full Diagnostic" data-zh="SSD 全面检测" style="font-size:0.95rem;margin-bottom:0.5rem;">SSD Full Diagnostic</h4>
+                <p data-en="Full health check including SMART data read, TBW analysis, read/write speed test, error scan, and firmware version verification." data-zh="全面健康检查，包括 SMART 数据读取、TBW 分析、读写速度测试、错误扫描和固件版本验证。" style="font-size:0.82rem;color:var(--text-dim);line-height:1.7;">Full health check including SMART data read, TBW analysis, read/write speed test, error scan, and firmware version verification.</p>
+            </div>
+            <div class="delivery-card" style="padding:1.5rem;border-left:3px solid var(--green);">
+                <h4 data-en="NAND Chip Sorting" data-zh="NAND 芯片分类" style="font-size:0.95rem;margin-bottom:0.5rem;">NAND Chip Sorting</h4>
+                <p data-en="Sort removed NAND chips by manufacturer, die size, page size, NAND type (SLC/MLC/TLC/QLC), and grade for maximum recovery value." data-zh="按制造商、Die 尺寸、Page 大小、NAND 类型（SLC/MLC/TLC/QLC）和等级分类拆机 NAND 芯片，实现最大回收价值。" style="font-size:0.82rem;color:var(--text-dim);line-height:1.7;">Sort removed NAND chips by manufacturer, die size, page size, NAND type (SLC/MLC/TLC/QLC), and grade for maximum recovery value.</p>
+            </div>
+            <div class="delivery-card" style="padding:1.5rem;border-left:3px solid var(--cyan);">
+                <h4 data-en="Secure Data Erase" data-zh="安全数据擦除" style="font-size:0.95rem;margin-bottom:0.5rem;">Secure Data Erase</h4>
+                <p data-en="Complete secure erase and data destruction to ensure all stored data is permanently removed before reuse or recycling." data-zh="完整的安全擦除和数据销毁，确保所有存储数据在再利用或回收前被永久清除。" style="font-size:0.82rem;color:var(--text-dim);line-height:1.7;">Complete secure erase and data destruction to ensure all stored data is permanently removed before reuse or recycling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section class="partners-section" id="partners">
+    <div class="section-header reveal">
+        <div class="label" data-en="Who We Work With" data-zh="合作对象">Who We Work With</div>
+        <h2 data-en="Who We Work With" data-zh="合作对象">Who We Work With</h2>
+        <p data-en="Long-term partnerships across the global storage supply chain" data-zh="我们与全球范围内的存储行业上下游伙伴建立长期合作">Long-term partnerships across the global storage supply chain</p>
+        <div class="divider"></div>
+    </div>
+    <div class="partners-grid">
+        <div class="partner-item reveal"><div class="partner-icon">📦</div><h5>SSD Distributors</h5><p data-en="SSD distribution channels" data-zh="SSD 渠道商">SSD distribution channels</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">♻</div><h5>Electronic Recyclers</h5><p data-en="E-waste recycling companies" data-zh="电子回收商">E-waste recycling companies</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">🖥</div><h5>Data Center Liquidators</h5><p data-en="Server and data center decommission" data-zh="数据中心拆机商">Server and data center decommission</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">🔧</div><h5>Server Dismantling</h5><p data-en="Server dismantling companies" data-zh="服务器拆解公司">Server dismantling companies</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">🏭</div><h5>Factory Surplus</h5><p data-en="Factory inventory suppliers" data-zh="工厂库存供应商">Factory inventory suppliers</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">🛠</div><h5>Repair Shops</h5><p data-en="SSD repair and refurbish" data-zh="维修商">SSD repair and refurbish</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">🌐</div><h5>Trading Companies</h5><p data-en="International electronics trading" data-zh="贸易公司">International electronics trading</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">⚡</div><h5>E-waste Companies</h5><p data-en="Electronic waste processing" data-zh="电子废料公司">Electronic waste processing</p></div>
+        <div class="partner-item reveal"><div class="partner-icon">💎</div><h5>NAND Flash Suppliers</h5><p data-en="NAND flash chip supply" data-zh="闪存芯片供应商">NAND flash chip supply</p></div>
+    </div>
+</section>
+
+<!-- ===== GLOBAL ===== -->
+<section id="global">
+    <div class="section-header reveal">
+        <div class="label" data-en="Global Recycling Network" data-zh="全球回收网络">Global Recycling Network</div>
+        <h2 data-en="Global Recycling Network" data-zh="全球回收网络">Global Recycling Network</h2>
+        <p data-en="We are actively seeking long-term SSD and NAND flash suppliers worldwide" data-zh="我们长期寻找全球范围内的 SSD 与 NAND 闪存供应商">We are actively seeking long-term SSD and NAND flash suppliers worldwide</p>
+        <div class="divider"></div>
+    </div>
+    <div class="global-content">
+        <p class="reveal" data-en="We are looking for long-term suppliers worldwide. If you have used SSDs, enterprise SSDs, NAND flash chips, defective drives, or storage-related inventory, please contact us with your stock list." data-zh="我们长期寻找全球范围内的 SSD、企业级固态硬盘、闪存芯片、故障盘、库存盘及存储类电子物料供应商。欢迎发送清单、图片和数量，我们会根据实际情况快速评估和报价。">We are looking for long-term suppliers worldwide. If you have used SSDs, enterprise SSDs, NAND flash chips, defective drives, or storage-related inventory, please contact us with your stock list.</p>
+        <div class="global-cta reveal">
+            <p data-en="Ready to send your stock list? Fill out the contact form below or reach us directly via WhatsApp / WeChat / Email. We typically respond within 24 hours." data-zh="准备好发送您的货物清单了吗？请填写下方联系表单，或直接通过 WhatsApp / 微信 / 邮箱联系我们。我们通常在 24 小时内回复。">Ready to send your stock list? Fill out the contact form below or reach us directly via WhatsApp / WeChat / Email. We typically respond within 24 hours.</p>
+            <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                <a href="#contact" class="btn btn-green" data-en="Submit Stock List" data-zh="提交货物清单">Submit Stock List</a>
+                <a href="#contact" class="btn btn-outline" data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== MORE GALLERY ===== -->
+<section style="background:var(--bg);">
+    <div class="section-header reveal">
+        <div class="label" data-en="Stock Gallery" data-zh="现货实拍">Stock Gallery</div>
+        <h2 data-en="Our SSD & Flash Inventory" data-zh="SSD 与闪存现货">Our SSD & Flash Inventory</h2>
+        <div class="divider"></div>
+    </div>
+    <div class="gallery-strip reveal">
+        <img src="images/795c7d35683f71a1c050189fc2abd2c2.jpg" alt="Enterprise SSDs">
+        <img src="images/6e8e97415c355b0553353a27307a61b2.jpg" alt="NAND chips">
+        <img src="images/0101633743c0ecd8e6b534e7759ce601.jpg" alt="Bulk SSD stock">
+        <img src="images/646b3c841894d8084afd843cef4f25f4.jpg" alt="Flash components">
+        <img src="images/56e45795efaf9d89e637aa04fa5a78c1.jpg" alt="SSD inventory">
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+    <div class="section-header reveal">
+        <div class="label" data-en="Contact Us" data-zh="联系我们">Contact Us</div>
+        <h2 data-en="Get In Touch" data-zh="联系我们">Get In Touch</h2>
+        <p data-en="Send your stock information — we reply with a quote within 24 hours" data-zh="发送您的货物信息，我们将在 24 小时内回复报价">Send your stock information — we reply with a quote within 24 hours</p>
+        <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info-block reveal">
+            <h3 data-en="Contact Information" data-zh="联系方式">Contact Information</h3>
+            <p data-en="Whether you have bulk SSDs, server pulls, factory surplus, or NAND flash chips, feel free to reach out. We welcome inquiries from suppliers worldwide." data-zh="无论您有批量 SSD、服务器拆机盘、工厂库存还是闪存芯片，请随时联系我们。我们欢迎全球供应商的询价与合作。">Whether you have bulk SSDs, server pulls, factory surplus, or NAND flash chips, feel free to reach out. We welcome inquiries from suppliers worldwide.</p>
+            <div class="contact-item"><div class="contact-icon green">📱</div><div class="contact-item-text"><span>WhatsApp</span><p>+86 13187032372</p></div></div>
+            <div class="contact-item"><div class="contact-icon blue">📞</div><div class="contact-item-text"><span data-en="Phone" data-zh="手机">Phone</span><p>+86 13187032372</p></div></div>
+            <div class="contact-item"><div class="contact-icon blue">✉</div><div class="contact-item-text"><span>Email</span><p>25987336@qq.com</p></div></div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/25987336@qq.com" method="POST">
+            <input type="hidden" name="_subject" value="SSD Stock List Inquiry">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-row">
+                <input type="text" name="Name" data-en-ph="Your Name" data-zh-ph="您的姓名" placeholder="Your Name" required>
+                <input type="text" name="Company" data-en-ph="Company" data-zh-ph="公司名称" placeholder="Company">
+            </div>
+            <div class="form-row">
+                <input type="email" name="email" data-en-ph="Email" data-zh-ph="电子邮箱" placeholder="Email" required>
+                <input type="tel" name="Phone" data-en-ph="WhatsApp / WeChat / Phone" data-zh-ph="WhatsApp / 微信 / 电话" placeholder="WhatsApp / WeChat / Phone">
+            </div>
+            <input type="text" name="Country" data-en-ph="Country / Region" data-zh-ph="国家或地区" placeholder="Country / Region">
+            <div class="form-row">
+                <select name="Product Type" id="productType">
+                    <option value="" data-en="Product Type" data-zh="产品类型">Product Type</option>
+                    <option data-en="Used SSDs" data-zh="二手 SSD">Used SSDs</option>
+                    <option data-en="Enterprise SSDs" data-zh="企业级 SSD">Enterprise SSDs</option>
+                    <option data-en="NAND Flash Chips" data-zh="闪存芯片">NAND Flash Chips</option>
+                    <option data-en="Overstock" data-zh="库存料">Overstock</option>
+                    <option data-en="Defective / Scrap" data-zh="故障/报废盘">Defective / Scrap</option>
+                    <option data-en="Mixed Lots" data-zh="混合料">Mixed Lots</option>
+                    <option data-en="Other" data-zh="其他">Other</option>
+                </select>
+                <input type="text" name="Quantity" data-en-ph="Quantity" data-zh-ph="数量" placeholder="Quantity">
+            </div>
+            <input type="text" name="Brand Model" data-en-ph="Brand & Model (e.g. Samsung, Micron 5300)" data-zh-ph="品牌型号（如 Samsung、Micron 5300）" placeholder="Brand & Model (e.g. Samsung, Micron 5300)">
+            <textarea name="Message" data-en-ph="Please describe your stock: quantity, condition, health status, photos available, etc." data-zh-ph="请描述您的货物：数量、状态、健康度、是否有图片和测试报告等。" rows="5" placeholder="Please describe your stock: quantity, condition, health status, photos available, etc."></textarea>
+            <button type="submit" class="btn btn-green" data-en="Submit Stock List" data-zh="提交货物信息">Submit Stock List</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="nav-brand" style="margin-bottom:0.25rem;">
+                <div class="nav-brand-icon">XB</div>
+                <span data-en="XinShenLan ZhongHe" data-zh="新深蓝众合">XinShenLan ZhongHe</span>
+            </div>
+            <p data-en="Global SSD &amp; NAND Flash Recycling Partner" data-zh="全球 SSD 与 NAND 闪存回收合作伙伴">Global SSD &amp; NAND Flash Recycling Partner</p>
+        </div>
+        <div class="footer-col">
+            <h5 data-en="QUICK LINKS" data-zh="快速链接">QUICK LINKS</h5>
+            <a href="#about" data-en="About Us" data-zh="关于我们">About Us</a>
+            <a href="#buy" data-en="What We Buy" data-zh="回收范围">What We Buy</a>
+            <a href="#process" data-en="How It Works" data-zh="合作流程">How It Works</a>
+            <a href="#testing" data-en="Testing" data-zh="检测能力">Testing</a>
+        </div>
+        <div class="footer-col">
+            <h5 data-en="SERVICES" data-zh="服务">SERVICES</h5>
+            <a href="#delivery" data-en="Hong Kong Delivery" data-zh="香港交货">Hong Kong Delivery</a>
+            <a href="#delivery" data-en="Shenzhen Delivery" data-zh="深圳交货">Shenzhen Delivery</a>
+            <a href="#testing" data-en="SSD Testing" data-zh="SSD 检测">SSD Testing</a>
+            <a href="#testing" data-en="NAND Sorting" data-zh="NAND 分类">NAND Sorting</a>
+        </div>
+        <div class="footer-col">
+            <h5 data-en="CONTACT" data-zh="联系方式">CONTACT</h5>
+            <a href="https://wa.me/8613187032372" target="_blank">WhatsApp</a>
+            <a href="tel:+8613187032372">+86 13187032372</a>
+            <a href="mailto:25987336@qq.com">25987336@qq.com</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 XinShenLan ZhongHe Co., Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <a href="#" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a>
+            <a href="#" data-en="Terms of Service" data-zh="服务条款">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt=""></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" data-en="✓ Stock list submitted. We will respond within 24 hours." data-zh="✓ 货物信息已提交，我们将在 24 小时内回复。">✓ Stock list submitted. We will respond within 24 hours.</div>
+
+<script>
+var currentLang = 'en';
+
+function switchLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+    // All elements with data-en / data-zh
+    document.querySelectorAll('[data-en][data-zh]').forEach(function(el) {
+        var val = el.getAttribute('data-' + lang);
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') return;
+        if (el.tagName === 'OPTION') {
+            el.textContent = val;
+        } else {
+            el.innerHTML = val;
+        }
+    });
+
+    // Placeholders
+    document.querySelectorAll('[data-en-ph][data-zh-ph]').forEach(function(el) {
+        el.placeholder = el.getAttribute('data-' + lang + '-ph');
+    });
+
+    // Toggle button text
+    document.getElementById('langToggle').textContent = lang === 'en' ? '中文' : 'EN';
+}
+
+document.getElementById('langToggle').addEventListener('click', function() {
+    switchLang(currentLang === 'en' ? 'zh' : 'en');
+});
+
+// Nav scroll
+var navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Scroll reveal
+function revealOnScroll() {
+    var els = document.querySelectorAll('.reveal');
+    for (var i = 0; i < els.length; i++) {
+        var rect = els[i].getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+            els[i].classList.add('visible');
+        }
+    }
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+// Lightbox
+var lb = document.getElementById('lightbox');
+var lbImg = document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery-strip img, .gallery-hero img').forEach(function(img) {
+    img.addEventListener('click', function() { lbImg.src = this.src; lb.style.display = 'flex'; });
+});
+lb.addEventListener('click', function() { this.style.display = 'none'; });
+
+// No extra JS needed - form submits directly to FormSubmit.co
+</script>
+</body>
+</html>
